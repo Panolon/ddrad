@@ -1,16 +1,15 @@
-Pipeline for utilizing double digest
+Pipeline for utilizing double digest onto a chromosome with enzymes from Bio.Restriction
 
-0. Download libraries 
+Download libraries 
 
+Make sure the libraries are insalled with:
 pip install bio biopython
 
-1. Make a file chromosome.fasta in order to double digest it. Make sure it has only one squence
+Create a chromosome.fasta file for double digest and choose two of your favourites enzymes. You can see all the Restriction enzymes python and a full 
+documentation for dealing with them here 
+http://biopython.org/DIST/docs/cookbook/Restriction.html
 
-2. Choose two of your favourites enzymes. Make sure the enzymes are in python enzymes list
+The main function is ddrad(chromosome, enz1, enz2). Run test.py for a first, simple example. A file e1e2.fasta will be created with all the fragments of double 
+digest. Details about the length of each fragment and chromosome id are appearing in the line > bla bla bla of the fasta for meta analysis
 
-3. Call ddrad(chromo, e1,e2) and let the show begin!
-
-A file e1e2.fasta will be created with all the fragments of double digest. Details about the length of each fragment 
-and chromosome id are appearing in the line > bla bla bla of the fasta for meta analysis
-
-Take care!
+Evolab 2023
