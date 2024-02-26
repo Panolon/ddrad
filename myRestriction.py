@@ -52,7 +52,10 @@ def ddpositions(chromosome,enz1, enz2):
         
         while  j < len(end) and  end[j] <= start[i]:
             j+=1
-        
+		
+        ddpos.append(end[j-1])
+        ddpos.append(start[i])
+	    
         if j == len(end):
             ddpos.append(end[j-1])
             ddpos.append(start[i])
