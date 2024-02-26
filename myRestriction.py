@@ -43,8 +43,6 @@ def ddpositions(chromosome,enz1, enz2):
             i+=1
         
         if i == len(start):
-            ddpos.append(start[i-1])
-            ddpos.append(end[j])
             return ddpos
         
         ddpos.append(start[i-1])
@@ -57,6 +55,4 @@ def ddpositions(chromosome,enz1, enz2):
         ddpos.append(start[i])
 	    
         if j == len(end):
-            ddpos.append(end[j-1])
-            ddpos.append(start[i])
             return ddpos
